@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="WhiteboardGUI">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="863" height="619"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="99883" binding="boardContainer" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <toolbar id="c8585" binding="toolBar">
+            <constraints border-constraint="North"/>
+            <properties>
+              <orientation value="0"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="18a0b" class="javax.swing.JButton" binding="rectangleButton">
+                <constraints/>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="74643" class="javax.swing.JButton" binding="ellipseButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="92e2d" class="javax.swing.JButton" binding="lineButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="29702" class="javax.swing.JButton" binding="roundButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="f4678" class="javax.swing.JButton" binding="starButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="ff24d" class="javax.swing.JButton" binding="textButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="a194d" class="javax.swing.JButton" binding="colourButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="15453" class="javax.swing.JButton" binding="filledButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <background color="-855310"/>
+                  <text value="Fill"/>
+                </properties>
+              </component>
+              <component id="9cf2f" class="javax.swing.JButton" binding="eraserButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="e15f" class="javax.swing.JButton" binding="clearButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Clear"/>
+                </properties>
+              </component>
+            </children>
+          </toolbar>
+          <grid id="a4af3" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="West"/>
+            <properties>
+              <background color="-1118482"/>
+            </properties>
+            <border type="bevel-raised"/>
+            <children>
+              <component id="96d0f" class="javax.swing.JList" binding="clientList">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <background color="-1118482"/>
+                  <enabled value="true"/>
+                  <font size="16"/>
+                  <model/>
+                </properties>
+              </component>
+              <component id="68f2f" class="javax.swing.JLabel">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <font name="KacstBook" size="24"/>
+                  <foreground color="-15773697"/>
+                  <text value="Collaborators"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="5d440" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-1118482"/>
+        </properties>
+        <border type="bevel-raised"/>
+        <children>
+          <component id="f6f5c" class="javax.swing.JLabel">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-1118482"/>
+              <font name="Karumbi" size="84" style="0"/>
+              <foreground color="-15773697"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Collaborative Whiteboard"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
