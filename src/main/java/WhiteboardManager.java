@@ -230,6 +230,8 @@ public class WhiteboardManager extends UnicastRemoteObject implements IWhiteboar
                 }
 
             } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "An error has occurred whilst trying" +
+                        " to kick " + name + ".");
                 continue;
             }
         }
@@ -251,6 +253,7 @@ public class WhiteboardManager extends UnicastRemoteObject implements IWhiteboar
                 if (user.getName().equals(this.name)) continue;
                 user.kick("The server manager has shut down the whiteboard.");
             } catch (Exception e) {
+                // Not a priority in this use case to further handle.
                 continue;
             }
         }
@@ -355,6 +358,8 @@ public class WhiteboardManager extends UnicastRemoteObject implements IWhiteboar
             try {
                 user.refreshShapes();
             } catch (RemoteException err) {
+                JOptionPane.showMessageDialog(null, "An error has occurred sending" +
+                        "shapes to users.");
             }
         }
     }
@@ -369,12 +374,16 @@ public class WhiteboardManager extends UnicastRemoteObject implements IWhiteboar
         try {
             showUsers();
         } catch (RemoteException e) {
+            JOptionPane.showMessageDialog(null, "An error has occurred" +
+                    "updating the user list.");
         }
 
         for (IWhiteboardUser user : userHelper.getUsers()) {
             try {
                 user.refreshUsernames();
             } catch (RemoteException err) {
+                JOptionPane.showMessageDialog(null, "An error has occurred sending" +
+                        "user list to users.");
             }
         }
     }

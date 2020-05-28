@@ -56,8 +56,6 @@ public class WhiteboardGUI implements IWhiteboardGUI {
         // Start GUI.
         startGUI();
 
-
-
     }
 
     /**
@@ -144,7 +142,10 @@ public class WhiteboardGUI implements IWhiteboardGUI {
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
                     clearWhiteboard();
-                } catch (RemoteException e) {}
+                } catch (RemoteException e) {
+                    // Unable to clear whiteboard.
+                    JOptionPane.showMessageDialog(null, "Unable to clear whiteboard.");
+                }
             }
         });
         roundButton.addActionListener(new ActionListener() {
@@ -230,6 +231,8 @@ public class WhiteboardGUI implements IWhiteboardGUI {
         try {
             whiteboardJPanel.updateShapes(this.user.getMessageController().getShapes());
         } catch (RemoteException err) {
+            JOptionPane.showMessageDialog(null, "An error has occurred" +
+                    " receiving data from the server.");
         }
     }
 

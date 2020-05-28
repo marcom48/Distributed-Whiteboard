@@ -111,7 +111,10 @@ public class WhiteboardJPanel extends JPanel {
                         user.getMessageController().addShape(newShape, currColour, currFilled);
                     }
 
-                } catch (RemoteException ex) {}
+                } catch (RemoteException ex) {
+                    JOptionPane.showMessageDialog(null, "An error has occurred sendinf" +
+                            "data to the server.");
+                }
 
                 drawStart = null;
                 drawEnd = null;
@@ -153,6 +156,9 @@ public class WhiteboardJPanel extends JPanel {
                 }
 
             } catch (RemoteException e) {
+                JOptionPane.showMessageDialog(null, "Unable to draw the board.");
+                // If repeated error, will cause significant interruption with messages.
+                break;
             }
         }
 
