@@ -132,6 +132,7 @@ public class WhiteboardManager extends UnicastRemoteObject implements IWhiteboar
 
         // Prompt to save changes if any.
         saveChanges();
+        this.currFile = "";
         this.shapes = new ArrayList<IWhiteboardShape>();
         globalShapeRefresh();
     }

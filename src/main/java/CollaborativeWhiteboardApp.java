@@ -40,11 +40,17 @@ public class CollaborativeWhiteboardApp {
                 System.exit(0);
 
             }
-            String ip = args[1];
-            int port = Integer.parseInt(args[1]);
+            String ip = args[0];
+            Integer port = -1;
 
-            // Check valid port number.
-            Utils.portCheck(port);
+            // Assert correct port number.
+            try{
+                port = Integer.parseInt(args[1]);
+                Utils.portCheck(port);
+            } catch (Exception e){
+                JOptionPane.showMessageDialog(null, "Invalid port number '" + port +"'.");
+                System.exit(0);
+            }
 
             // Get server username.
             final String name = JOptionPane.showInputDialog("Please choose your name: ");
@@ -53,14 +59,13 @@ public class CollaborativeWhiteboardApp {
                 System.exit(0);
             }
 
-
             // Create server and bind to local registry.
             final WhiteboardManager manager = new WhiteboardManager(name);
 
             try{
                 Registry reg = LocateRegistry.createRegistry(port);
-                Naming.rebind("Server", manager);
-
+                String serverName = "//" + ip + ":" + port.toString() + "/Server";
+                Naming.rebind(serverName, manager);
             } catch (ExportException e){
                 JOptionPane.showMessageDialog(null, "Port " + port + " in use.");
                 System.exit(0);
@@ -70,6 +75,8 @@ public class CollaborativeWhiteboardApp {
             }
 
             startTime = Instant.now().getEpochSecond();
+
+
 
             // Run GUI in separate thread.
             Thread t = new Thread(new Runnable() {

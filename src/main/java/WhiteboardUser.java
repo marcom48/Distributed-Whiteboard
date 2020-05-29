@@ -8,6 +8,7 @@ Class for user in whiteboard server.
 
 import javax.swing.*;
 import java.net.MalformedURLException;
+import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
@@ -38,7 +39,7 @@ public class WhiteboardUser extends UnicastRemoteObject implements IWhiteboardUs
         }
 
         String ip = args[0];
-        int port = -1;
+        Integer port = -1;
 
         // Assert correct port number.
         try{
@@ -49,7 +50,6 @@ public class WhiteboardUser extends UnicastRemoteObject implements IWhiteboardUs
             System.exit(0);
         }
 
-
         String name = JOptionPane.showInputDialog("Please choose your username: ");
 
         if (name == null || name.equals("")) {
@@ -59,9 +59,10 @@ public class WhiteboardUser extends UnicastRemoteObject implements IWhiteboardUs
         try {
 
             // Connect to server.
-            Registry registry = LocateRegistry.getRegistry(ip, port);
-            IWhiteboardManager server = (IWhiteboardManager) registry.lookup("Server");
+            String serverName = "//" + ip + ":" + port.toString() + "/Server";
+            IWhiteboardManager server = (IWhiteboardManager) Naming.lookup(serverName);
             IWhiteboardUser client = new WhiteboardUser(server, name);
+
 
             // Run GUI in separate thread.
             Thread t = new Thread(new Runnable() {

@@ -77,6 +77,7 @@ public class WhiteboardGUI implements IWhiteboardGUI {
         jFrame.setVisible(true);
         jFrame.setSize(1000, 800);
 
+
         // Add button action listeners.
         rectangleButton.addActionListener(new ActionListener() {
             @Override
