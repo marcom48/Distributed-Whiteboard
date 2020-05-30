@@ -75,7 +75,7 @@ public class WhiteboardGUI implements IWhiteboardGUI {
         jFrame.add(panel1);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setVisible(true);
-        jFrame.setSize(1000, 800);
+        jFrame.setSize(1200, 800);
 
 
         // Add button action listeners.
