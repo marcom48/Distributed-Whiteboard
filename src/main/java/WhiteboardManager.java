@@ -427,5 +427,6 @@ public class WhiteboardManager extends UnicastRemoteObject implements IWhiteboar
             this.clientList.setModel(userModel);
 
     }
+    
 
 }

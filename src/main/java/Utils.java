@@ -53,7 +53,6 @@ public class Utils {
      */
     public static ArrayList<Component> createTools(WhiteboardManager server) {
 
-        JLabel timeLabel = new JLabel("00:00:00");
         JButton newButton = new JButton("New");
         JButton saveButton = new JButton("Save");
         JButton loadButton = new JButton("Load");

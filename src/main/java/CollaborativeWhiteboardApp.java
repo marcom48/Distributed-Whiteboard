@@ -27,8 +27,9 @@ import java.time.Instant;
 
 public class CollaborativeWhiteboardApp {
 
-    public static JLabel timeLabel = new JLabel("Runtime: 00:00:00");
+    public static JLabel timeLabel = new JLabel("Runtime: 00:00:00    ");
     private static Long startTime;
+    private static Integer port = -1;
 
     public static void main(String args[]) {
 
@@ -41,7 +42,6 @@ public class CollaborativeWhiteboardApp {
 
             }
             String ip = args[0];
-            Integer port = -1;
 
             // Assert correct port number.
             try{
@@ -61,7 +61,6 @@ public class CollaborativeWhiteboardApp {
 
             // Create server and bind to local registry.
             final WhiteboardManager manager = new WhiteboardManager(name);
-
             try{
                 Registry reg = LocateRegistry.createRegistry(port);
                 String serverName = "//" + ip + ":" + port.toString() + "/Server";
@@ -86,10 +85,12 @@ public class CollaborativeWhiteboardApp {
                         WhiteboardGUI gui = new WhiteboardGUI(user);
 
                         gui.toolBar.add(Box.createHorizontalGlue());
+                        gui.addTools(new JLabel("Port: " + port + "    "));
                         gui.addTools(timeLabel);
                         for (Component tool : Utils.createTools(manager)) {
                             gui.addTools(tool);
                         }
+
 
                         gui.jFrame.addWindowListener(new WindowAdapter() {
                             public void windowClosing(WindowEvent e) {
@@ -137,6 +138,6 @@ public class CollaborativeWhiteboardApp {
      */
     private static void updateRuntime() {
         Long dur = Instant.now().getEpochSecond() - startTime;
-        timeLabel.setText(String.format("Runtime: %02d:%02d:%02d", dur / 3600, (dur % 3600) / 60, (dur % 60)));
+        timeLabel.setText(String.format("Runtime: %02d:%02d:%02d    ", dur / 3600, (dur % 3600) / 60, (dur % 60)));
     }
 }

@@ -9,26 +9,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/DS_Assignment2_jar/asdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/DS_Assignment2_jar/asdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardJPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardJPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardJPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardJPanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardJPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardJPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DS-Assignment2/WhiteboardManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CollaborativeWhiteboardApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CollaborativeWhiteboardApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WhiteboardGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WhiteboardGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WhiteboardManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WhiteboardManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WhiteboardUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WhiteboardUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +206,7 @@
       <workItem from="1590559623254" duration="3638000" />
       <workItem from="1590665651206" duration="599000" />
       <workItem from="1590705804556" duration="1328000" />
-      <workItem from="1590794382044" duration="1971000" />
+      <workItem from="1590794382044" duration="2441000" />
     </task>
     <servers />
   </component>
@@ -251,26 +234,26 @@
       <screen x="1920" y="0" width="1920" height="1200" />
     </state>
     <state x="2663" y="358" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1105/1920.0.1920.1200@1920.0.1920.1200" timestamp="1590040989585" />
-    <state width="1874" height="323" key="GridCell.Tab.0.bottom" timestamp="1590796054148">
+    <state width="1874" height="323" key="GridCell.Tab.0.bottom" timestamp="1590796826326">
       <screen x="1920" y="0" width="1920" height="1200" />
     </state>
     <state width="1874" height="292" key="GridCell.Tab.0.bottom/0.27.1920.1105/1920.0.1920.1200@0.27.1920.1105" timestamp="1590563275202" />
-    <state width="1874" height="323" key="GridCell.Tab.0.bottom/0.27.1920.1105/1920.0.1920.1200@1920.0.1920.1200" timestamp="1590796054148" />
-    <state width="1874" height="323" key="GridCell.Tab.0.center" timestamp="1590796054148">
+    <state width="1874" height="323" key="GridCell.Tab.0.bottom/0.27.1920.1105/1920.0.1920.1200@1920.0.1920.1200" timestamp="1590796826326" />
+    <state width="1874" height="323" key="GridCell.Tab.0.center" timestamp="1590796826325">
       <screen x="1920" y="0" width="1920" height="1200" />
     </state>
     <state width="1874" height="292" key="GridCell.Tab.0.center/0.27.1920.1105/1920.0.1920.1200@0.27.1920.1105" timestamp="1590563275202" />
-    <state width="1874" height="323" key="GridCell.Tab.0.center/0.27.1920.1105/1920.0.1920.1200@1920.0.1920.1200" timestamp="1590796054148" />
-    <state width="1874" height="323" key="GridCell.Tab.0.left" timestamp="1590796054148">
+    <state width="1874" height="323" key="GridCell.Tab.0.center/0.27.1920.1105/1920.0.1920.1200@1920.0.1920.1200" timestamp="1590796826325" />
+    <state width="1874" height="323" key="GridCell.Tab.0.left" timestamp="1590796826325">
       <screen x="1920" y="0" width="1920" height="1200" />
     </state>
     <state width="1874" height="292" key="GridCell.Tab.0.left/0.27.1920.1105/1920.0.1920.1200@0.27.1920.1105" timestamp="1590563275202" />
-    <state width="1874" height="323" key="GridCell.Tab.0.left/0.27.1920.1105/1920.0.1920.1200@1920.0.1920.1200" timestamp="1590796054148" />
-    <state width="1874" height="323" key="GridCell.Tab.0.right" timestamp="1590796054148">
+    <state width="1874" height="323" key="GridCell.Tab.0.left/0.27.1920.1105/1920.0.1920.1200@1920.0.1920.1200" timestamp="1590796826325" />
+    <state width="1874" height="323" key="GridCell.Tab.0.right" timestamp="1590796826325">
       <screen x="1920" y="0" width="1920" height="1200" />
     </state>
     <state width="1874" height="292" key="GridCell.Tab.0.right/0.27.1920.1105/1920.0.1920.1200@0.27.1920.1105" timestamp="1590563275202" />
-    <state width="1874" height="323" key="GridCell.Tab.0.right/0.27.1920.1105/1920.0.1920.1200@1920.0.1920.1200" timestamp="1590796054148" />
+    <state width="1874" height="323" key="GridCell.Tab.0.right/0.27.1920.1105/1920.0.1920.1200@1920.0.1920.1200" timestamp="1590796826325" />
     <state width="1874" height="399" key="GridCell.Tab.1.bottom" timestamp="1590191359852">
       <screen x="1920" y="0" width="1920" height="1200" />
     </state>
