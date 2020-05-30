@@ -85,7 +85,7 @@ public class CollaborativeWhiteboardApp {
                         WhiteboardGUI gui = new WhiteboardGUI(user);
 
                         gui.toolBar.add(Box.createHorizontalGlue());
-                        gui.addTools(new JLabel("Port: " + port + "    "));
+                        gui.addTools(new JLabel("Address: " + ip + ":" + port + "    "));
                         gui.addTools(timeLabel);
                         for (Component tool : Utils.createTools(manager)) {
                             gui.addTools(tool);

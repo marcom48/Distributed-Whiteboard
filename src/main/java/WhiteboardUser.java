@@ -69,6 +69,8 @@ public class WhiteboardUser extends UnicastRemoteObject implements IWhiteboardUs
                 public void run() {
                     try {
                         WhiteboardGUI gui = new WhiteboardGUI(client);
+                        gui.toolBar.add(Box.createHorizontalGlue());
+                        gui.addTools(new JLabel("Address: " + serverName + "    "));
                     } catch (RemoteException e) {
                         JOptionPane.showMessageDialog(null, "Unable to start GUI.");
                         System.exit(0);
@@ -103,7 +105,6 @@ public class WhiteboardUser extends UnicastRemoteObject implements IWhiteboardUs
             this.name = "user-" + rand.nextInt(1000);
 
         }
-
 
         try {
             Result response = server.requestRegister(this);
